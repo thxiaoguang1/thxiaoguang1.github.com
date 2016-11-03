@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>美丽说</title>
+<link href="../css/base.css" rel="stylesheet"/>
+<style>
+	.boss{ width:1220px; height:100%; margin:0 auto;}
+	.header{width:1220px; height:40px; margin:0 auto; background:#f5f5f5; margin:20px auto; position:relative;}
+	.header li{ padding:11px 14px 13px 14px; border-right:1px dotted #cbcbcb; font-size:13px;}
+	.header img{ margin-right:5px;}
+	.qq{margin-left:5px;}
+    .header ul{ position:absolute; left:515px; top:0;}
+	.header .rt{border-right:none;}
+	.cont{ width:1220px; height:66px; position:relative；}
+	.contt{ margin-top:15px; margin-left:6px;}
+	.contr{ margin:16px 386px 0 0;}
+	.nav{ height:40px; width:1220px; line-height:40px; color:#fff; font-size:15px; background:#ff6599;position:relative;}
+	.nav li a{ float:left; padding:0 15px 0 14px; color:#fff; font-size:15px;}
+	.nav .abcd{ margin-left:136px; line-height:40px; text-indent:2em;}
+	.nav .abcd a{ font-size:15px;}
+	.zhi{ width:1200px; height:574px; margin-left:10px;}
+	.zhil{width:238px; height:574px; border:1px solid #cdcdcd}
+	.ling{ width:198px; height:106px; border-bottom:1px dotted #cbcbcb; margin:0 0 0 20px;}
+	.ling dd{float:left;}
+	.ling dt span{ color:#ff6699; font-size:16px;}
+	.ling span{ font-size:12px; color:#666;}
+	.ling dt{ margin-top:8px; margin-bottom:12px;}
+	.ling dd{ margin:0 15px 12px 0;}
+	.ing span{color:#ff6699; font-size:12px;}
+	.zhic{ width:760px; height:574px;}
+	.xin{ width:760px; height:419px;}
+	.xx li{ margin:10px 0 0 11px}
+	.gb{padding-top:12px;}
+	.pin{ width:1220px; height:52px;}
+	.pinc{width:1200px; height:34px; font-size:20px; color:#666; padding:18px 0 0 0; border-bottom:1px solid #cdcdcd; line-height:32px; margin-left:10px;}
+	.pinc span{ font-size:20px; color:#ff8cb3;}
+	.pinc img{ margin-right:10px;}
+	.ren{height:754px; width:1200px; margin-left:10px; }
+	.ree{ margin-top:10px;}
+	.renn{ margin-top:9px; font-size:12px; color:#666; margin-bottom:29px;}
+	.renr{ color:#ff6699; border-bottom:1px dotted #cdcdcd; padding-bottom:12px; width:180px; margin-bottom:10px;}
+	.renr span{ text-decoration:line-through;color:#999; margin-left:9px;}
+	.rrr{widhth:180px; height:100%; margin-right:24px;}
+	.ree .ret{ margin-right:0;}
+	.rrr .df{ color:#666;}
+	.nn{margin-top:30px;}
+	.hh{ width:1200px; height:68px;border-bottom:1px solid #e6e6e6;}
+	.hhl{ width:163px; height:30px; background:url(../img/wel_ico2.png) 0 -239px; margin-top:35px;}
+	.hh .hhr{ line-height:36px; font-size:14px; color:#999; margin-top:10px;}
+	.ht{ widht:1200px; height:145;px; padding:35px 0 0 0;}
+	.chao{width:1200px; height:375px;}
+	.nc{width:1200px; height:46px; border-bottom:1px solid #e6e6e6; padding:0 0 10 0; border-bottom:1px solid #e6e6e6;}
+	.nb span{width:79px; height:28px; background:url(../img/wel_ico2.png) 0 -44px; display:block;}
+	.nb{line-height:28px; font-size:18px; color:#999; margin-top:15px;}
+	.zzr a{ font-size:14px; color:#999;}
+	.zzr{margin-top:17px;}`
+	.yifu{height:612px;}
+	.yiful{width:940px; height:592px; border-right:1px solid #e6e6e6; boder-bottom:1px solid #e6e6e6;}
+	.tank{ margin:0 5px 5px 0;}
+	.tankk{ float:left; width:40px; height:40px; text-align:center; line-height:40px; margin-right:20px;}
+	.tankk a{ font-size:16px; color:#ff6699}
+	.tankt{ float:left; margin:0 11px 10px 0; font-size:12px; color:#666;}
+	.tankt a{ font-size:12px; color:#666;}
+	.we{width:312px; height:49px; border-right:1px dotted #ccc; padding-top:10px;}
+	.we6{height:533px; width:940px; padding-top:20px;}
+	.yifu{ height:619px; width:1220px;}
+	.yiful .shen{border-right:0;}
+	.edg{ width:259px; height:38px; margin-right:10px;}
+	.deg1{ font-size:16px; color:#666;margin-top:20px; margin-left:10px;}
+	.deg2{ font-size:14px; color:#999; margin-top:22px;padding-right:2px;}
+	.deg2 a{font-size:14px; color:#999;}
+	.lili{width:239px; height:47px; border-bottom:1px dotted #ccc;padding:15px 0 0 0;}
+	.lil a{ font-size:12px; color:#7d6666;}
+	.lir a{ font-size:12px; color:#999;}
+	.lir{ margin-top:10px;}
+	.nb .qwe{ width:79px; height:28px; background:url(../img/wel_ico2.png) 0 -82px; display:block;}
+	.nb .wert{ width:79px; height:28px; background:url(../img/wel_ico2.png) 0 -120px; display:block;}
+	.nb .asd{ width:79px; height:28px; background:url(../img/wel_ico2.png) 0 -157px; display:block;}
+	.nb .sdf{ width:117px; height:28px; background:url(../img/wel_ico2.png) 0 -200px; display:block;}
+	.dfg li{ padding:0 14px 0 17px; border-left:1px dotted #ccc;  margin-top:21px; }
+	.dfg li a{ font-size:14px; color:#999;}
+	.last{ width:1200px; height:310px; margin-top:10px; margin-bottom:20px;}
+	.lastt{ width:213px; height:282px; border:1px solid #dddddd; padding-left:13px; margin-right:15px;}
+	.labt a{ font-size:14px; color:#666;}
+	.labt{ margin:12px 0 10px 0;}
+	.lbatt i{ font-size:12px; color:#666; float:left; margin-top:13px;}
+	.lbatt b{ float:right; font-size:12px; color:#fff; background:#ff6699;width:64px; height:20px; line-height:20px; text-align:center; margin:13px 13px 0 0;}
+	.last .yess{ margin-right:0;}
+	.end{ width:100%; height:312px; background:url(../img/images/329_03.png) repeat; margin-top:20px; margin-left:-10px; padding:30px 0 0 10px;}
+	.end img{ margin-top:10px; margin-right:15px;}
+	.ert{ width:16px; height:16px; display:block; background:url(../img/mls_global140607.png) 0 -21px;}
+	.rty{ width:16px; height:16px; display:block; background:url(../img/mls_global140607.png) -73px -21px;}
+	.tyu{ width:16px; height:16px; display:block; background:url(../img/mls_global140607.png) -49px -21px;}
+	.yui span{ display:block; width:131px; height:98px; background:url(../img/mls_global140607.png) 0 -400px;}
+	.end dl{ margin-right:53px;}
+	.end dt a{ font-size:17px; color:#666;}
+	.end dt{ font-size:17px; color:#666;}
+	.end dd{ font-size:12px; color:#666; margin-top:20px;}
+	.end dd a{ font-size:12px; color:#666;}'
+	.hjk img{ width:115px; height:115px;}
+	.nav a:hover{ background:#ed3577;}
+	.ghj{ display:block; width:79px; height:24px; background:url(../img/wel_ico2.png) 0 -82px;}
+	.mlp{ display:block; width:79px; height:24px; background:url(../img/wel_ico2.png) 0 -43px;}
+	.mko{ display:block; width:79px; height:24px; background:url(../img/wel_ico2.png) 0 -158px;}
+	.bhu{ display:block; width:79px; height:24px; background:url(../img/wel_ico2.png) 0 -118px;}
+	.ennd{ width:1200px; height:34px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6;}
+	.eend{ width:100%; height:210px;}
+	.ennd a{ line-height:34px; color:#666;}
+	.ennd li{ margin-right:10px;}
+	.cont p{ text-indent:-999px;} 
+</style>
+</head>
+
+<body>
+	<div class="boss">
+        <div class="header">
+    	<ul class="clearfix">
+        	<li class="fl clearfix"><a href=""><img src="../img/1 (1).png" alt=""/ class="fl">微信登陆</a></li>
+            <li class="fl clearfix"><a href=""><img src="../img/1 (2).png" alt=""/ class="fl">QQ登陆</a></li>
+            <li class="fl clearfix" ><a href="">登陆</a></li>
+            <li class="fl clearfix"><a href="">注册</a></li>
+            <li class="fl clearfix q"><a href=""><img src="../img/1 (3).png" alt=""/ class="fl">我的购物车</a></ll>
+            <li class="fl clearfix"><a href=""><img src="../img/1 (5).png" alt=""/ class="fl"><p class="ww fl">我的订单</p><img src="../img/1 (4).png" alt=""/ class="qq fl"></a></li>
+            <li class="fl clearfix"><a href=""><img src="../img/1 (6).png" alt=""/ class="fl">下载APP</a></li>
+            <li class="fl clearfix rt"><a  href="#">客户服务</a></li>
+        </ul>
+    </div>
+    <div class="cont">
+    	<a href="#" class="fl"><img src="../img/logo_n4.png" alt=""/ class="contt"/><p>美丽说</p></a>
+        <a href="#" class="fr"><img src="../img/66.png" alt=""/ class="contr"/></a>
+    </div>
+    <div class="nav clearfix">
+    	<ul class="clearfix">
+        	<li class="abcd"><a href="#">首页</a></li>
+            <li><a href="#">今日最热</a></li>
+            <li><a href="#">衣服</a></li>
+            <li><a href="#">鞋子</a></li>
+            <li><a href="#">包包</a></li>
+            <li><a href="#">配饰</a></li>
+            <li><a href="#">美妆</a></li>
+            <li><a href="#">特卖</a></li>
+            <li><a href="#">团购</a></li>
+            <li><a href="#">好店</a></li>
+            <li><a href="#">杂志</a></li>
+            <li><a href="#">爱美丽club</a></li>
+        </ul>
+    </div>
+    <div class="zhi clearfix">
+    	<div class="zhil fl">
+        	<dl class="ling clearfix">
+            	<dt class="clearfix"><a href="#"><img src="../img/2_03.png" alt=""/ class="fl"><span>最热</span></a></dt>
+                <dd><a href="#"><span>冬季新品</span></a></dd>
+                <dd class="ing"><a href="#"><span>毛衣</span></a></dd>
+                <dd><a href="#"><span>活力运动鞋</span></a></dd>
+                <dd><a href="#"><span>连衣裙</span></a></dd>
+                <dd class="ing"><a href="#"><span>新款靴子</span></a></dd>
+                <dd><a href="#"><span>单肩包</span></a></dd>
+                <dd><a href="#"><span>暖冬美鞋</span></a></dd>
+                <dd><a href="#"><span>外套</span></a></dd>
+                <dd class="ing"><a href="#"><span>入冬打底裤</span></a></dd>
+            </dl>
+        	<dl class="ling clearfix">
+            	<dt class="clearfix"><a href="#"><span class="mlp"></span></a></dt>
+                <dd class="ing"><a href="#"><span>卫衣</span></a></dd>
+                <dd class="ing"><a href="#"><span>开衫</span></a></dd>
+                <dd><a href="#"><span>大衣</span></a></dd>
+                <dd><a href="#"><span>小脚裤</span></a></dd>
+                <dd><a href="#"><span>牛仔裤</span></a></dd>
+                <dd class="ing"><a href="#"><span>半身裙</span></a></dd>
+                <dd><a href="#"><span>长袖连衣裙</span></a></dd>
+                <dd class="ing"><a href="#"><span>打底裤</span></a></dd>
+                <dd><a href="#"><span>秋冬美裙</span></a></dd>
+                <dd><a href="#"><span>打底衫裙</span></a></dd>
+            </dl>
+            <dl class="ling clearfix">
+            	<dt class="clearfix"><a href="#"><span class="ghj"></span></a></dt>
+                <dd><a href="#"><span>鞋子</span></a></dd>
+                <dd class="ing"><a href="#"><span>短靴</span></a></dd>
+                <dd><a href="#"><span>长靴</span></a></dd>
+                <dd class="ing"><a href="#"><span>雪地靴</span></a></dd>
+                <dd><a href="#"><span>运动鞋</span></a></dd>
+                <dd><a href="#"><span>高跟鞋</span></a></dd>
+                <dd><a href="#"><span>秋冬美鞋</span></a></dd>
+                <dd><a href="#"><span>优质热销鞋履</span></a></dd>
+                <dd><a href="#"><span>过膝鞋</span></a></dd>
+                <dd><a href="#"><span>马丁鞋</span></a></dd>
+            </dl>
+            <dl class="ling clearfix">
+            	<dt class="clearfix"><a href="#"><span class="mko"></span></a></dt>
+                <dd class="ing"><a href="#"><span>围巾</span></a></dd>
+                <dd><a href="#"><span>帽子</span></a></dd>
+                <dd class="ing"><a href="#"><span>项链</span></a></dd>
+                <dd><a href="#"><span>手机壳</span></a></dd>
+                <dd class="ing"><a href="#"><span>耳钉</span></a></dd>
+                <dd><a href="#"><span>手链</span></a></dd>
+                <dd class="ing"><a href="#"><span>发箍</span></a></dd>
+                <dd><a href="#"><span>手表</span></a></dd>
+                <dd class="ing"><a href="#"><span>连衣袜</span></a></dd>
+                <dd><a href="#"><span>袜子</span></a></dd>
+                <dd><a href="#"><span>丝巾</span></a></dd>
+                <dd class="ing"><a href="#"><span></span></a></dd>
+            </dl>
+            <dl class="ling clearfix">
+            	<dt class="clearfix"><a href="#"><span class="bhu"></span></a></dt>
+                <dd class="ing"><a href="#"><span>冬季新款包包</span></a></dd>
+                <dd class="ing"><a href="#"><span>双肩包</span></a></dd>
+                <dd><a href="#"><span>行李箱</span></a></dd>
+                <dd class="ing"><a href="#"><span>超高人气必败潮包</span></a></dd>
+                <dd><a href="#"><span>大包</span></a></dd>
+                <dd class="ing"><a href="#"><span>钱包</span></a></dd>
+                <dd class="ing"><a href="#"><span>单肩包</span></a></dd>
+                <dd><a href="#"><span>手提包</span></a></dd>
+                <dd class="ing"><a href="#"><span>入斜挎包</span></a></dd>
+            </dl></div>
+        <div class="zhic fl">
+        	<div class="xin fl"><a href=""><img src="../img/32.png" alt=""/></a></div>
+            <ul class="xx">
+            	<li class="fl"><a href="#"><img src="../img/7.jpg" alt=""/></a></li>
+                <li class="fl"><a href="#"><img src="../img/4.jpg" alt=""/></a></li>
+                <li class="fl"><a href="#"><img src="../img/10.jpg" alt=""/></a></li>
+                <li class="fl"><a href="#"><img src="../img/8.jpg" alt=""/></a></li>
+                 
+            </ul>
+        </div>
+        <div clsaa="zhir fr">
+        	<ul>
+            	<li><a href=""><img src="../img/2.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../img/5.jpg" alt=""/></a></li>
+                <li><a href=""><img src="../img/3.jpg" alt=""/></a></li>
+                <li class="gb"><a href=""><img src="../img/6.jpg" alt=""/></a></li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="pin">
+    	<p class="pinc"><img src="../img/12.png" alt=""/ class="fl">人气推荐<span>单品</span></p>
+    </div>
+    <div class="ren">
+    	<ul class="ree clearfix">
+        	<li class="rrr fl"><a href=""><img src="../img/13.jpg" alt=""/><p class="renn">美丽无上限 不到50元</p><p class="renr fl">&yen;49.00元<span>&yen;189.00元</span></p><p class="df">1885人已经购买</p></a></li>
+            <li class="rrr fl"><a href=""><img src="../img/14.jpg" alt=""/><p class="renn">高人气基础白衬衫打底外穿都时尚</p><p class="renr">&yen;49.00元<span>&yen;98.00元</span></p><p class="df">3225人已经购买</p></a></li>
+            <li class="rrr fl"><a href=""><img src="../img/15.jpg" alt=""/><p class="renn">好评不断白菜价短靴天天都过双12</p><p class="renr">&yen;79.00元<span>&yen;238.00元</span></p><p class="df">325人已经购买</p></a></li>
+            <li class="rrr fl"><a href=""><img src="../img/21.jpg" alt=""/><p class="renn">显瘦针织连衣裙4色3码任你选</p><p class="renr">&yen;108.00元<span>&yen;360.00元</span></p><p class="df">920人已经购买</p></a></li>
+            <li class="rrr fl"><a href=""><img src="../img/16.jpg" alt=""/><p class="renn">招财猫加厚手套最新萌物让你融化</p><p class="renr">&yen;42.00元<span>&yen;189.00元</span></p><p class="df">1885人已经购买</p></a></li>
+            <li class="rrr fl ret"><a href=""><img src="../img/19.jpg" alt=""/><p class="renn">美丽无上限 不到50元</p><p class="renr">&yen;49.00元<span>&yen;189.00元</span></p><p class="df">1885人已经购买</p></a></li>
+        </ul>
+        <ul class="ree clearfix">
+        	<li class="rrr fl nn"><a href=""><img src="../img/18.jpg" alt=""/><p class="renn">美丽无上限 不到50元</p><p class="renr fl">&yen;49.00元<span>&yen;189.00元</span></p><p class="df">1885人已经购买</p></a></li>
+            <li class="rrr fl nn"><a href=""><img src="../img/17.jpg" alt=""/><p class="renn">高人气基础白衬衫打底外穿都时尚</p><p class="renr">&yen;49.00元<span>&yen;98.00元</span></p><p class="df">3225人已经购买</p></a></li>
+            <li class="rrr fl nn"><a href=""><img src="../img/20.jpg" alt=""/><p class="renn">好评不断白菜价短靴天天都过双12</p><p class="renr">&yen;79.00元<span>&yen;238.00元</span></p><p class="df">325人已经购买</p></a></li>
+            <li class="rrr fl nn"><a href=""><img src="../img/21.jpg" alt=""/><p class="renn">显瘦针织连衣裙4色3码任你选</p><p class="renr">&yen;108.00元<span>&yen;360.00元</span></p><p class="df">920人已经购买</p></a></li>
+            <li class="rrr fl nn"><a href=""><img src="../img/22.jpg" alt=""/><p class="renn">招财猫加厚手套最新萌物让你融化</p><p class="renr">&yen;42.00元<span>&yen;189.00元</span></p><p class="df">1885人已经购买</p></a></li>
+            <li class="rrr fl ret nn"><a href=""><img src="../img/23.jpg" alt=""/><p class="renn">美丽无上限 不到50元</p><p class="renr">&yen;49.00元<span>&yen;189.00元</span></p><p class="df">1885人已经购买</p></a></li>
+        </ul></div>
+        <div class="hh clearfix">
+        	<p class="hhl fl"></p>
+            <p class="hhr fr"><a href="">查看多有团购 &gt;</a></p>
+        </div>
+        <div class="chao">
+        	<ul class="ree clearfix">
+        	<li class="rrr fl"><a href=""><img src="../img/35.jpg" alt=""/><p class="renn">荧光色针织帽</p><p class="renr fl">&yen;9.90元<span>&yen;45.00元</span></p><p class="df">3179人已经购买</p></a></li>
+            <li class="rrr fl"><a href=""><img src="../img/39.jpg" alt=""/><p class="renn">小香风衣毛绒套装</p><p class="renr">&yen;99.00元<span>&yen;206.00元</span></p><p class="df">1355人已经购买</p></a></li>
+            <li class="rrr fl"><a href=""><img src="../img/36.jpg" alt=""/><p class="renn">弹力修身加绒PU皮裤</p><p class="renr">&yen;59.80元<span>&yen;264.00元</span></p><p class="df">2070人已经购买</p></a></li>
+            <li class="rrr fl"><a href=""><img src="../img/37.jpg" alt=""/><p class="renn">过膝长靴</p><p class="renr">&yen;62.00元<span>&yen;75.00元</span></p><p class="df">5055人已经购买</p></a></li>
+            <li class="rrr fl"><a href=""><img src="../img/34.jpg" alt=""/><p class="renn">连帽中长款加厚棉衣</p><p class="renr">&yen;118.00元<span>&yen;268.00元</span></p><p class="df">1885人已经购买</p></a></li>
+            <li class="rrr fl ret"><a href=""><img src="../img/38.jpg" alt=""/><p class="renn">子母拉杆箱</p><p class="renr">&yen;129.00元<span>&yen;500.00元</span></p><p class="df">10228人已经购买</p></a></li>
+        </ul>
+        </div> 
+        <div class="ht">
+        <a href="#"><img src="../img/40.png" alt=""/></a>
+        </div>
+        <div class="nc clearfix">
+        	<p class="nb fl"><span class="fl"></span>|今日上新4098件</p>
+            <p class="zzr fr"><a href="">查看所有衣服 &gt;</a></p>
+        </div> 
+        <div class="yifu">
+        	<div class="yiful fl">
+            	<div>
+                	<ul class="claearfix we6">
+                    	<li class="tank fl"><a href=""><img src="../img/22 (5).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/22 (2).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/22 (7).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/22 (4).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/22 (2).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/11.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/22 (7).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/31.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/22 (9).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/22 (6).jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+                <dl class="we fl">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+                <dl class="we fl">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+                <dl class="we fl shen">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+            </div>
+            <div class="yifur fr">
+            	<div class="edg">
+                	<p class="deg1 fl">最热衣服好店</p>
+                    <p class="deg2 fr"><a href="">更多好店&gt;</a></p>
+                </div>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_03.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_06.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_08.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_10.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                 <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_12.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_14.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_16.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_18.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_20.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="nc clearfix">
+        	<p class="nb fl"><span class="fl qwe"></span>|今日上新6879件</p>
+            <p class="zzr fr"><a href="">查看所有鞋子 &gt;</a></p>
+        </div> 
+        <div class="yifu">
+        	<div class="yiful fl">
+            	<div>
+                	<ul class="claearfix we6">
+                    	<li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/67.jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+                <dl class="we fl">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+                <dl class="we fl">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+                <dl class="we fl shen">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+            </div>
+            <div class="yifur fr">
+            	<div class="edg">
+                	<p class="deg1 fl">最热衣服好店</p>
+                    <p class="deg2 fr"><a href="">更多好店&gt;</a></p>
+                </div>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_03.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_06.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_08.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_10.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                 <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_12.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_14.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_16.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_18.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_20.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="nc clearfix">
+        	<p class="nb fl"><span class="fl wert"></span>|今日上新1458件</p>
+            <p class="zzr fr"><a href="">查看所有包包 &gt;</a></p>
+        </div> 
+        <div class="yifu">
+        	<div class="yiful fl">
+            	<div>
+                	<ul class="claearfix we6">
+                    	<li class="tank fl"><a href=""><img src="../img/68.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/69.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/69.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/69.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/69.jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/69.jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+                <dl class="we fl">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+                <dl class="we fl">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+                <dl class="we fl shen">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+            </div>
+            <div class="yifur fr">
+            	<div class="edg">
+                	<p class="deg1 fl">最热衣服好店</p>
+                    <p class="deg2 fr"><a href="">更多好店&gt;</a></p>
+                </div>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_03.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_06.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_08.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_10.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                 <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_12.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_14.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_16.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_18.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_20.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="nc clearfix">
+        	<p class="nb fl"><span class="fl asd"></span>|今日上新4098件</p>
+            <p class="zzr fr"><a href="">查看所有配饰 &gt;</a></p>
+        </div> 
+        <div class="yifu">
+        	<div class="yiful fl">
+            	<div>
+                	<ul class="claearfix we6">
+                    	<li class="tank fl"><a href=""><img src="../img/68 (1).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (1).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (1).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (1).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (1).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (2).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (2).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (2).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (2).jpg" alt=""/></a></li>
+                        <li class="tank fl"><a href=""><img src="../img/68 (2).jpg" alt=""/></a></li>
+                    </ul>
+                </div>
+                <dl class="we fl">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+                <dl class="we fl">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+                <dl class="we fl shen">
+                	<dt class="tankk"><a href="#">上衣</a></dt>
+                    <dd class="tankt"><a href="#">背心</a></dd>
+                    <dd class="tankt"><a href="#">针织衫</a></dd>
+                    <dd class="tankt"><a href="#">打底衫</a></dd>
+                    <dd class="tankt"><a href="#">衬衫</a></dd>
+                    <dd class="tankt"><a href="#">卫衣</a></dd>
+                    <dd class="tankt"><a href="#">情侣装</a></dd>
+                    <dd class="tankt"><a href="#">外套</a></dd>
+                    <dd class="tankt"><a href="#">韩范儿T恤</a></dd>
+                    <dd class="tankt"><a href="#">小西装</a></dd>
+                    <dd class="tankt"><a href="#">马甲</a></dd>
+                </dl>
+            </div>
+            <div class="yifur fr">
+            	<div class="edg">
+                	<p class="deg1 fl">最热衣服好店</p>
+                    <p class="deg2 fr"><a href="">更多好店&gt;</a></p>
+                </div>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_03.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_06.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_08.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_10.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                 <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_12.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_14.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_16.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_18.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+                <dl class="lili clearfix">
+                	<dt class="fl"><a href="#"><img src="../img/12_20.png"</a></dt>
+                    <dd class="lil"><a href="#">妖精的衣橱</a></dd>
+                    <dd class="lir"><a href="#">235件商品/总销量84572</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="nc clearfix">
+        	<p class="nb fl"><span class="fl sdf"></span></p>
+			<ul class="dfg fr">
+            	<li class="fl"><a href="#">欧美</a></li>
+                <li class="fl"><a href="#">甜美</a></li>
+                <li class="fl"><a href="#">复古</a></li>
+                <li class="fl"><a href="#">个性</a></li>
+                <li class="fl"><a href="#">日系</a></li>
+                <li class="fl"><a href="#">其他</a></li>
+                <li class="fl"><a href="">查看所有配饰 &gt;</a></p></li>
+            </ul>
+        </div>
+        <div class="last clearfix">
+        	<ul class="lastt fl">
+            	<li class="labt"><a href="#">小女人有恋物癖</a></li>
+                <li><a href="#"><img src="../img/99 (2).jpg" alt="" /></a></li>
+                <li class="lbatt"><a href="#"><i>886个分享</i><b>去看看</b></a></li>
+            </ul>
+            <ul class="lastt fl">
+            	<li class="labt"><a href="#">怪诞文艺腔</a></li>
+                <li><a href="#"><img src="../img/99 (5).jpg" alt="" /></a></li>
+                <li class="lbatt"><a href="#"><i>82413个分享</i><b>去看看</b></a></li>
+            </ul>
+            <ul class="lastt fl">
+            	<li class="labt"><a href="#">每个人有它的脾气</a></li>
+                <li><a href="#"><img src="../img/99 (1).jpg" alt="" /></a></li>
+                <li class="lbatt"><a href="#"><i>234个分享</i><b>去看看</b></a></li>
+            </ul>
+             <ul class="lastt fl">
+            	<li class="labt"><a href="#">craft</a></li>
+                <li><a href="#"><img src="../img/99 (4).jpg" alt="" /></a></li>
+                <li class="lbatt"><a href="#"><i>1521个分享</i><b>去看看</b></a></li>
+            </ul>
+             <ul class="lastt fl yess">
+            	<li class="labt"><a href="#">=小宅</a></li>
+                <li><a href="#"><img src="../img/99 (3).jpg" alt="" /></a></li>
+                <li class="lbatt"><a href="#"><i>686个分享</i><b>去看看</b></a></li>
+            </ul>
+        </div>
+     
+    <div class="end clearfix">
+   		<div class="eend">
+        <img src="../img/images/123_03.png" alt=""/ class="fl">
+        <div class="clearfix">
+        <dl class="fl">
+        	<dt>4000-800-577</dt>
+            <dd>美丽说客服热线</dd>
+            <dd>周一至周日08:00-22:00</dd>
+        </dl>
+        <dl class="fl">
+        	<dt><a href="#">用户帮助</a></dt>
+            <dd><a href="#">网站指南</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+            <dd><a href="#">意见反馈</a></dd>
+        </dl>
+         <dl class="fl">
+        	<dt><a href="#">关于我们</a></dt>
+            <dd><a href="#">关于美丽说</a></dd>
+            <dd><a href="#">练习我们</a></dd>
+            <dd><a href="#">加入美丽说</a></dd>
+            <dd><a href="#">商家入住</a></dd>
+            <dd><a href="#">商家推广</a></dd>
+        </dl>
+        <dl class="fl">
+        	<dt><a href="#">关注我们</a></dt>
+            <dd><a href="#" class="clearfix"><span class=“ert fl”></span>新浪微博</a></dd>
+            <dd><a href="#" class="clearfix"><span class="rty fl"></span>QQ空间</a></dd>
+            <dd><a href="#" class="clearfix"><span class="tyu fl"></span>腾讯微博</a></dd>
+        </dl>
+        <dl class="fl">
+        	<dt><a href="#">关于美丽说微信公众号</a></dt>
+            <dd class="hjk"><img src="../img/qrcode-new.jpg" alt="" width='150'; height='150';/></dd>
+        </dl>
+        <dl class="fr yui">
+        	<dt>美丽端客户端下载</dt>
+            <dd><span></span></dd>
+        </dl></div></div>
+       <div class="ennd"> <ul class="clearfix">
+        	<li class="fl"><a href="#">友情链接：</a></li>
+            <li class="fl"><a href="#">腾讯女性</a></li>
+            <li class="fl"><a href="#">列表网</a></li>
+            <li class="fl"><a href="#">太平网女性网</a></li>
+            <li class="fl"><a href="#">多宝网</a></li>
+            <li class="fl"><a href="#">女丽女性网</a></li>
+            <li class="fl"><a href="#">酷我音乐</a></li>
+            <li class="fl"><a href="#">LADYMAX时尚网</a></li>
+            <li class="fl"><a href="#">空姐网</a></li>
+            <li class="fl"><a href="#">中国品牌网</a></li>
+            <li class="fl"><a href="#">优美网</a></li>
+            <li class="fl"><a href="#">贵士时尚</a></li>
+            <li class="fl"><a href="#">哈时尚网</a></li>
+            <li class="fr"><a href="#">更多 &gt;</a></li>
+        </ul>
+    </div>
+    </div>
+</body>
+</html>
