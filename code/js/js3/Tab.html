@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项卡</title>
+	<style type="text/css">
+		*{padding: 0;margin:0;list-style: none;}
+		body,html{background: #000;}
+		div{width:600px;height:400px;margin: 100px auto;overflow: hidden;position: relative;}
+		ul{width:4200px;height:400px;overflow: hidden;position: absolute;}
+		 ul li{width:600px;height:400px;float: left;}
+		 ul li img{width:100%;height:100%;}
+		 ol{width:220px;height:20px;overflow: hidden;position: absolute;bottom: 30px;left:35%;}
+		 ol li{width:20px;height:20px;background: #FFF;margin-left: 15px;border-radius: 50%;float: left;}
+		 ol li.on{background-color:#e4007f;}
+	</style>
+	<script type="text/javascript" src="jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var aBtn=$('div ol li');
+			var oUl=$('div ul')
+			var aLi=$('div ul li')
+			var j=0;
+			aBtn.each(function(i){
+				$(this).click(function(){
+					
+					aBtn.removeClass('on')
+					$(this).addClass('on')
+					oUl.animate({left:-i*600})
+				})
+			})
+			$('div').hover(function(){
+				clearInterval(window.timer)
+			},function(){
+				window.timer=setInterval(function(){				
+				j++;				
+				console.log(j)
+				oUl.animate({left:-j*600},500,function(){						
+						if(j==aLi.length-1){
+						j=0;						
+						oUl.css('left',0)
+						}	
+						aBtn.attr('class','');	
+						aBtn.eq(j).attr('class','on');			
+				});			
+			},1000)
+
+			})
+		window.timer=setInterval(function(){				
+				j++;				
+				console.log(j)
+				oUl.animate({left:-j*600},800,function(){						
+						if(j==aLi.length-1){
+						j=0;						
+						oUl.css('left',0)
+						}	
+						aBtn.attr('class','');	
+						aBtn.eq(j).attr('class','on');			
+				});			
+			},1000)
+		});
+
+
+
+
+		
+
+
+	</script>
+</head>
+<body>
+	<div>
+		<ul>
+			<li>
+				<img src="1.jpg" alt="">
+			</li>
+			<li>
+				<img src="2.jpg" alt="">
+			</li>
+			<li>
+				<img src="3.jpg" alt="">
+			</li>
+			<li>
+				<img src="4.jpg" alt="">
+			</li>
+			<li>
+				<img src="5.jpg" alt="">
+			</li>
+			<li>
+				<img src="6.jpg" alt="">
+			</li>
+			<li>
+				<img src="1.jpg" alt="">
+			</li>
+		</ul>
+		<ol>
+			<li class="on"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			
+		</ol>
+	</div>
+</body>
+</html>

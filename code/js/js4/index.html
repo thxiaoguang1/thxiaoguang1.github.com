@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>篮球</title>
+	<style type="text/css">
+		*{padding: 0;margin:0;}
+		body{background: #000;overflow: hidden;}
+		div{width:220px;height:200px;background: url(1.png);-webkit-transform:perspective(800px) rotateY(0deg);position: absolute;top: 0;left: 20px;}
+	</style>
+	<script type="text/javascript">
+	window.onload=function(){
+		//var i=20;+6666666666666666666666666++
+		var oBox=document.getElementsByTagName('div')[0];
+	/*setInterval(function(){
+
+		oBox.style.WebkitTransform='rotateY('+i+'deg)';
+		i+=20;
+	},1000)*/
+		var iSpeedX=0;
+		var iSpeedY=0;
+		var lastX=0;
+		var lastY=0;
+		var left=0;
+		var top=0;
+		oBox.onmousedown=function(ev){
+			clearInterval(oBox.timer);
+			var oEvent=ev||event;
+			var disX=oEvent.clientX-oBox.offsetLeft;
+			var disY=oEvent.clientY-oBox.offsetTop;
+			document.onmousemove=function(ev){
+				var oEvent=ev||event;
+				left=oEvent.clientX-disX;	
+				top=oEvent.clientY-disY;
+				if(left<0){
+					left=0;
+
+				}else if(left>document.documentElement.clientWidth-oBox.offsetWidth){
+					left = document.documentElement.clientWidth-oBox.offsetWidth;
+
+				}
+				if(top<0){
+					top=0;
+
+				}else if(top>document.documentElement.clientHeight-oBox.offsetHeight){
+					top=document.documentElement.clientHeight-oBox.offsetHeight
+				}
+				oBox.style.left=left+'px';
+				oBox.style.top=top+'px';
+
+			iSpeedX = oEvent.clientX-lastX;
+			iSpeedY = oEvent.clientY-lastY;
+			lastX = oEvent.clientX;
+			lastY = oEvent.clientY;
+
+
+			}
+			document.onmouseup=function(){
+				document.onmousemove = null;
+				document.onmouseup = null;
+				move(oBox)
+				oBox.releaseCapture&&oBox.releaseCapture();
+			}
+			oBox.setCapture&&oBox.setCapture()
+			return false;
+		};
+		function move(obj){
+
+			clearInterval(obj.timer);
+			obj.timer=setInterval(function(){
+				iSpeedY+=3;
+				left+=iSpeedX;
+				top+=iSpeedY;
+				if(top>document.documentElement.clientHeight-obj.offsetHeight){
+				top=document.documentElement.clientHeight-obj.offsetHeight;
+				iSpeedY*=-0.85;
+				iSpeedX*=0.85;
+
+
+			}
+			if(top<0){
+				top = 0;
+				iSpeedY*=-0.85;
+				iSpeedX*=0.85;
+			}
+			if(left>document.documentElement.clientWidth-obj.offsetWidth){
+				left=document.documentElement.clientWidth-obj.offsetWidth;
+				iSpeedX*=-0.85;
+				iSpeedY*=0.85;
+			}
+			if(left<0){
+				left = 0;
+				iSpeedX*=-0.85;
+				iSpeedY*=0.85;
+			}
+			if(Math.abs(iSpeedX)<1)iSpeedX=0;
+			if(Math.abs(iSpeedY)<1)iSpeedY=0;
+			
+			obj.style.left = left+'px';
+			obj.style.top = top+'px';
+			if(iSpeedX==0&&iSpeedY==0&&Math.round(top)==document.documentElement.clientHeight-obj.offsetHeight){
+				clearInterval(obj.timer);
+			}
+
+
+
+
+
+
+
+			},30)
+
+
+		}
+		move(oBox)
+
+
+	}
+
+	</script>
+</head>
+<body>
+	<div></div>
+</body>
+</html>

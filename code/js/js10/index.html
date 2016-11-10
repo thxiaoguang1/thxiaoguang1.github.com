@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<style>
+*{ margin:0; padding:0; list-style:none;}
+#div1{ width:440px; height:300px; border:1px solid #000; position:absolute; left:50%; margin-left:-220px; margin-top:-150px; top:50%; overflow:hidden;}
+#div1 img{ position:absolute; left:0; top:0; z-index:1;}
+#div1 a{ position:absolute; left:0;width:100%; height:150px;  z-index:2; opacity:0; filter:alpha(opacity:0);}
+#top{ top:0;background:red;}
+#down{ bottom:0;background:green;}
+</style>
+<script type="text/javascript">
+	window.onload=function(){
+	var oDiv=document.getElementById('div1');
+	var oImg=document.getElementById('img1');
+	var oTop=document.getElementById('top');
+	var oDown=document.getElementById('down');
+
+	var timer=null;
+	var top=0;
+	
+	function getStyle(obj, name){
+	return (obj.currentStyle || getComputedStyle(obj, false))[name];
+	}
+
+	var iDH=parseInt(getStyle(oDiv,'height'));
+	var iImgH=parseInt(getStyle(oImg, 'height'));
+
+	oTop.onmouseover=function(){
+		clearInterval(timer)
+		function tab(){
+		top-=10;
+		if(top<(iDH-iImgH))
+		{
+			top=iDH-iImgH;
+
+		}
+		oImg.style.top=top+'px';
+	}
+
+		timer=setInterval(tab,50)
+
+	}
+	oDown.onmouseover=function(){
+		clearInterval(timer)
+
+		function tab(){
+		top+=10;
+		if(top>=0)
+		{
+			top=0;
+
+		}
+		oImg.style.top=top+'px';
+	}
+
+		timer=setInterval(tab,50)
+
+	}		
+
+
+
+
+}
+
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+	<div id="div1">
+	<img src="index.jpg" id="img1">
+    <a href="javascript:;" id="top"></a>
+    <a href="javascript:;" id="down"></a>
+</div>
+
+</body>
+</html>

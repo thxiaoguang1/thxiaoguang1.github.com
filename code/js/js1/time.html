@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>time</title>
+	<style type="text/css">
+
+
+	body{background:#000;font-size:50px;text-align: center;color: #fff;}
+	#box{margin:0px auto;width:100%;height:200px;float: left;}
+	h2{float: left;font-size: 18px;font-family: 'Microsoft Yahei';width:18px;height:400px;line-height: 18px;margin-left: 50px;color: red;}
+	h3{float: left;font-size: 18px;font-family: 'Microsoft Yahei';width:18px;height:400px;margin-left: 200px;line-height: 18px;color:red;}
+	.time{overflow: hidden;}
+	.clock{position: absolute;left:520px;top:100px;width:300px; height:300px; border:5px solid #FFF; border-radius:50%;}
+	.hou{
+	width:10px;height:80px; 
+	background:#fff;border-radius: 50% 50% 0 0;
+	position:absolute; 
+	left:50%;
+	top:70px;
+	margin-left:-5px;
+	-webkit-transform-origin:bottom;
+
+	}
+.min{
+	width:6px;
+	height:100px;
+	background:#fff;
+	border-radius: 50% 50% 0 0;
+	position:absolute; 
+	left:50%;
+	top:50px;
+	margin-left:-3px;
+	-webkit-transform-origin:bottom;
+}
+
+.sec{
+	width:4px;
+	height:120px;
+	background:red;
+	border-radius:50% 50% 0 0;
+	position:absolute;
+	left:50%;
+	top:30px;
+	margin-left:-2px;
+	-webkit-transform-origin:bottom;
+}
+.clock span{
+	 position:absolute;
+	 left:50%;
+	 top:0;
+	 width:4px;
+	 height:10px;
+	 background:#fff;
+	 margin-left:-2px;
+	 -webkit-transform-origin:center 150px;
+}
+
+
+.clock span.big_scale{ width:6px; margin-left:-3px; height:18px;}
+.big_scale i{ 
+	position:absolute; 
+	left:50%; top:5px;
+	font-style:normal;
+	width:30px;
+	margin-left:-15px;
+	text-align:center;
+}
+
+.cap{ width:20px; height:20px; background:-webkit-radial-gradient(#fff,black); position:absolute; left:50%; top:50%; margin-left:-10px; margin-top:-10px; border-radius:50%;}
+
+	
+	</style>
+	<script type="text/javascript" src="move4.js"></script>
+	<script type="text/javascript">
+	window.onload=function(){
+
+		var oBox=document.getElementById('box');
+		var aImg=oBox.getElementsByTagName('img');
+		var oClock = document.querySelector('.clock');
+		var oHou = document.querySelector('.hou');
+		var oMin = document.querySelector('.min');
+		var oSec = document.querySelector('.sec');
+	
+		(function(){
+
+			function tuDou(num){
+
+			return num<10?'0'+num:''+num;
+
+		}
+		function clock(){
+		var oDate = new Date();
+		var h =oDate.getHours();
+		var m = oDate.getMinutes();
+		var s=oDate.getSeconds();
+		var str=''+tuDou(h)+''+tuDou(m)+''+tuDou(s)+'';
+		for(var i=0;i<str.length;i++)
+		{
+				aImg[i].src='img/'+str.charAt(i)+'.png';
+
+		}
+	}
+		clock();
+		setInterval(clock,1000);
+		})()
+		var oH=document.getElementsByTagName('h2')[0];
+		var oH3=document.getElementsByTagName('h3')[0];
+		var str="时间都去哪儿了？珍惜眼前美好时光，"
+		var str2="全力奋斗，不留遗憾，不愧于心。"
+		for(var i=0;i<str.length;i++){
+				oP=document.createElement('p');
+				oP.innerHTML=str.charAt(i);
+				oP.style.opacity=0;
+
+				oH.appendChild(oP);
+		}
+		for(var j=0;j<str2.length;j++){
+				oP=document.createElement('p');
+				oP.innerHTML=str2.charAt(j);
+				oP.style.opacity=0;
+
+				oH3.appendChild(oP);
+		}
+		var n=0;
+		window.timer=setInterval(function(){
+			oH.children[n].style.opacity=1;
+			move(oH.children[n],{opacity:1},{complete:function(){
+
+			}});
+			n++;
+			if(n==oH.children.length){
+				clearInterval(window.timer)
+			}
+		},200)
+		
+		var m=0;
+		oH3.timer2=setTimeout(function(){
+			oH3.timer=setInterval(function(){
+				oH3.children[m].style.opacity=1;
+				move(oH3.children[m],{opacity:1});
+				m++;
+				if(m==oH3.children.length){
+					clearInterval(oH3.timer)
+					clearTimeout(oH3.timer2)
+				}
+			},200)
+		},str.length*200)
+	
+	//创建60个刻度
+	var N = 60;
+	for(var i=0;i<N;i++){
+		var oS = document.createElement('span');
+		//每个刻度都是6°
+		oS.style.WebkitTransform = 'rotate('+i*6+'deg)';
+		//如果i%5==0，那就是大刻度
+		if(i%5==0){
+			oS.className = 'big_scale';
+			//加上数字
+			oS.innerHTML = '<i>'+(i/5||12)+'<\/i>';
+			var oI = oS.children[0];
+			//让数字转回来
+			oI.style.WebkitTransform = 'rotate('+-i*6+'deg)';
+		}
+		oClock.appendChild(oS);
+	}
+	function clock(){
+		var oDate = new Date();
+		var h = oDate.getHours();
+		var m = oDate.getMinutes();
+		var s = oDate.getSeconds();
+		var ms = oDate.getMilliseconds();
+		
+		oHou.style.WebkitTransform = 'rotate('+(h*30+m/60*30)+'deg)';
+		oMin.style.WebkitTransform = 'rotate('+(m*6+s/60*6)+'deg)';
+		oSec.style.WebkitTransform = 'rotate('+(s*6+ms/1000*6)+'deg)';
+	}
+	clock();
+	setInterval(clock,1);
+
+
+
+	}
+
+	</script>
+</head>
+<body>
+<div class="time">
+	<h3></h3>
+	<h2></h2>
+		<div id="box">
+
+			<img src="img/0.png" alt=" "/>
+			<img src="img/0.png" alt=" "/>:
+			<img src="img/0.png" alt=" "/>
+			<img src="img/0.png" alt=" "/>:
+			<img src="img/0.png" alt=" "/>
+			<img src="img/0.png" alt=" "/>
+
+
+
+		</div>
+	</div>
+
+	<div class="clock">
+		<div class="hou"></div>
+		<div class="min"></div>
+		<div class="sec"></div>
+		<div class="cap"></div>
+	</div>
+</body>
+</html>
